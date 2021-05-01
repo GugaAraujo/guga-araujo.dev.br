@@ -1,127 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="icon" type="image/png" href="lego32.ico" />
-        <link
+<head>
+    <meta charset="UTF-8">
+    <meta refresh="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="lego32.ico" />
+    <title>Gustavo Araújo | Desenvolvedor Web</title>
+    <link
         async defer
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
         crossorigin="anonymous"
       />
-        <title>
-            Gustavo Araújo | Desenvolvedor Web
-        </title>
-        <style>
-            body  {
-             
-                background-image: linear-gradient(30deg, rgb(5, 16, 48), rgb(138, 165, 238)); 
-                align-items: center;
-            }
-            h1,h2,h3,p,i {
-                color: rgb(255, 255, 255);
-                font-family: Tahoma, sans-serif;
-                text-shadow: rgb(16, 13, 65) 3px 3px 3px;
-                text-align: center;
-            }
-    
-            .titulo {
-                height: 30vh;
-                padding-top: 10%;
-                text-align: center;
-                line-height: 0.6;
-            }
-            .titulo > h1 {
-                font-size: 55px;
-                color:  rgb(255, 255, 255);
-                text-shadow: rgb(5, 8, 39) 3px 3px 3px;
-            }
-            
-        
-            .titulo > h2 {
-                font-size: 28px;
-            }
-            .principal {
-                height: 83.5vh;
-                text-align: center;
-                line-height: 1.6px;
-            }
-            #iconCor {
-                color: rgb(102, 192, 219);
-                text-shadow: rgb(0, 0, 0) 3px 3px 3px;
-            }
-            .textoIcon {
-                font-size: 28px;
-                color: white;
-                font-family: Tahoma, sans-serif;
-                text-shadow: rgb(5, 8, 39) 3px 3px 3px;
-                text-align: center;
-            }
-            @media (min-width: 900px) and (max-width: 1200px) {
-                .titulo {
-                    height: 20vh;
-                }
-                .titulo > h1    {
-                    font-size: 85px;
-                }
-                .titulo > h2 {
-                    font-size: 50px;
-                }
-                .principal {
-                    height: 73.5vh;
-                }
-                .principal > h2 {
-                    font-size: 50px;
-                }
-            }
-            @media screen and (orientation: landscape)  {
-                .titulo {
-                    padding-top: 5%;
-                    height: 60vh;
-                }
-                .titulo > h1    {
-                    font-size: 85px;
-                }
-                .titulo > h2 {
-                    font-size: 50px;
-                }
-                .principal {
-                    height: 53.5vh;
-                }
-                .principal > h2 {
-                    font-size: 50px;
-                }
-
-            }
-        </style>
-    </head>
-    <body>
-        <section class="titulo">
-            <h1>Gustavo Araújo</h1>
-            <h2 id="typer"><h2>
-
-            </section>
-            <section class="principal">
-                <h2 class="textoIcon"><i class="fa fa-id-card fa-1x" id="iconCor"></i> Portfólio em construção</i></h2>
-               
-        </section>
-
-        <script>
-            textoTyper = "Desenvolvedor Web"
-            var i = 0;
-            var velocidade = 100;
-
-        function typer() {
-            if (i < textoTyper.length) {
-                document.getElementById("typer").innerHTML += textoTyper.charAt(i);
-                i++;
-                setTimeout(typer,80)
-            }
+    <style>
+        body {
+            margin: 4% 6%;
+            height: 120vh;
+            color: rgb(28, 28, 29);
+            background: linear-gradient( rgba(190, 190, 190, 0.329), rgba(105, 105, 102, 0.432));
+            font-family: Verdana, Tahoma, sans-serif;
+            line-height: 0.5cm;
+            max-width: 700px;
         }
-        setTimeout(typer(), 2000);
+        h1 {
+            padding-bottom: 0.7cm;
+            color: rgb(54,95,145);
+            text-shadow: rgb(178, 201, 219) 2px 2px 2px;
+        }
+        h3 {
+            font-size: 16px;
+            color: rgb(54,95,145);
+            text-shadow: rgb(178, 201, 219) 1px 1px 1px;
+        }
+        div {
+            padding-bottom: 0.75cm;
+        }
+        div.experiencias {
+            line-height: 0.7cm;
+        }
+        div.pdf {
+            padding-top: 1cm;
+            padding-left: 275px;
+        }
+        button {
+            font-weight: bold;
+            color: rgb(54,95,145);
+            box-shadow: rgb(116, 115, 114) 1px 1px 1px;
+        }
+        li {
+            font-weight: bold;
+        }
+        i {
+            color: black;
+        }
+        a {
+            color: rgb(54,95,145);
+        }
+    </style>
+</head>
+<body>
+    <div class="nome">
+        <h1 id="typer"></h1><b>
+        <p>
+            Brasileiro, 29 anos – São Paulo – SP 
+        </p>
+        <p>Github: <a href="https://github.com/GugaAraujo" target="_blank">GugaAraujo</a>
+        | Linkedin: <a href="https://linkedin.com/in/gugaaraujo" target="_blank">GugaAraujo</a>
+        | Site: <a href="https://www.guga-araujo.dev.br" target="_blank">guga-araujo.dev.br</a></p>
+        <p>E-mail: <a href="mailto:gustavo.avk@msn.com" target="_blank">gustavo.avk@msn.com</a> | Celular: <a href="tel:11910028010" target="_blank">(11) 91002-8010</a> | <a href="https://api.whatsapp.com/send?phone=5511910028010&text=Oi%2C%20Gustavo!%20Tudo%20bom%3F" target="_blank">whatsapp</a></p>
+        </b>
+    </div>
+    <div class="objetivo">
+        <h3>OBJETIVO</h3><hr>
+        <p>
+            <b>Cargo de Desenvolvedor Web Fullstack Júnior</b>
+        </p>
+    </div>
+    <div class="formacao">
+        <h3>FORMAÇÃO </h3><hr>
+        <ul>
+            <li>
+                <p>
+                    Desenvolvedor Web Fullstack – Bootcamp da Digital House Brasil, conclusão 
+em Out/21.
+                </p>
 
-        </script>
+            </li>
+        </ul>
+        <p>
+            Node.JS, HTML5, CSS3, Javascript, React, GIT, MySQL, MongoDB e 
+            Metodologias Ágeis (SCRUM) 
+        </p>
+    </div>
+    <div class="experiencias">
+        <h3>EXPERIÊNCIA PROFISSIONAL</h3><hr>
+        <ul>
+            <li>
+                <p>
+                    2020-2021 – <a href="https://www.laboratoriolotus.com.br" target="_blank">https://laboratoriolotus.com.br</a> |
+Cargo: Desenvolvedor Web 
+                </p>
+            </li>
+        </ul>
+        <p>
+            Desenvolvido em Javascript, HTML5 e CSS3 para o Laboratório Lótus - 
+Próteses Dentárias.
+        </p>
+        <ul>
+            <li>
+                <p>
+                    2012-2013 – Internacional Marítima. |
+Cargo: Auxiliar de Informática. 
+                </p>
+            </li>
+        </ul>
+        <p>
+            Manutenção de rede e computadores, envolvendo a montagem de hardware, 
+reparos e configurações de softwares. 
+        </p>
+    </div>
+    <div class="conhecimentos">
+        <h3>CONHECIMENTOS ADICIONAIS</h3><hr>
+        <ul>
+            <li>
+                <p>
+                    Python - básico 
+                </p>
+            </li>
+            <li>
+                <p>
+                    Inglês – Básico (Basic One, CNA - conclusão em 2010). 
+                </p>
+            </li>
+            <li>
+                <p>
+                    Hábil em manutenções de hardware, software e redes.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="pdf">
+        <button type="submit" onclick="window.open('Luiz Gustavo Araujo Vieira - Desenvolvedor Web.pdf')">Donwload em PDF</button>
+    </div>
+    <script>
+        textoTyper = "Luiz Gustavo Araújo Vieira"
+        var i = 0;
+        var velocidade = 100;
 
-    </body>
+    function typer() {
+        if (i < textoTyper.length) {
+            document.getElementById("typer").innerHTML += textoTyper.charAt(i);
+            i++;
+            setTimeout(typer,80)
+        }
+    }
+    setTimeout(typer(), 2000);
+    </script>
+</body>
 </html>
