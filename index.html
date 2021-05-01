@@ -17,7 +17,7 @@
     <style>
         body {
             margin: 4% 6%;
-            height: 120vh;
+            height: 140vh;
             color: rgb(28, 28, 29);
             background: linear-gradient( rgba(190, 190, 190, 0.329), rgba(105, 105, 102, 0.432));
             font-family: Verdana, Tahoma, sans-serif;
@@ -50,6 +50,9 @@
             box-shadow: rgb(116, 115, 114) 1px 1px 1px;
         }
         li {
+       
+        }
+        .destaque{
             font-weight: bold;
         }
         i {
@@ -57,6 +60,15 @@
         }
         a {
             color: rgb(54,95,145);
+        }
+
+        @media (min-width: 900px) and (max-width: 1200px) {
+            body{
+                height: 300vh;
+            }
+            h1 {
+                font-size: 28px;
+            }
         }
     </style>
 </head>
@@ -82,60 +94,63 @@
         <h3>FORMAÇÃO </h3><hr>
         <ul>
             <li>
-                <p>
+                <p class="destaque">
                     Desenvolvedor Web Fullstack – Bootcamp da Digital House Brasil, conclusão 
 em Out/21.
                 </p>
-
+                <p>
+                    Node.JS, HTML5, CSS3, Javascript, React, GIT, MySQL, MongoDB e 
+                    Metodologias Ágeis (SCRUM) 
+                </p>
             </li>
         </ul>
-        <p>
-            Node.JS, HTML5, CSS3, Javascript, React, GIT, MySQL, MongoDB e 
-            Metodologias Ágeis (SCRUM) 
-        </p>
+        
     </div>
     <div class="experiencias">
         <h3>EXPERIÊNCIA PROFISSIONAL</h3><hr>
         <ul>
             <li>
+                <p class="destaque">
+                    2020-2021 – <a href="https://www.laboratoriolotus.com.br" target="_blank">https://laboratoriolotus.com.br</a>
+                </p>
+                <p>Cargo: Desenvolvedor Web </p>
                 <p>
-                    2020-2021 – <a href="https://www.laboratoriolotus.com.br" target="_blank">https://laboratoriolotus.com.br</a> |
-Cargo: Desenvolvedor Web 
+                    Desenvolvido em Javascript, HTML5 e CSS3 para o Laboratório Lótus - 
+        Próteses Dentárias.
                 </p>
             </li>
         </ul>
-        <p>
-            Desenvolvido em Javascript, HTML5 e CSS3 para o Laboratório Lótus - 
-Próteses Dentárias.
-        </p>
+      
         <ul>
             <li>
+                <p class="destaque">
+                    2012-2013 – Internacional Marítima. 
+
+                </p>
+                <p>Cargo: Auxiliar de Informática. </p>
                 <p>
-                    2012-2013 – Internacional Marítima. |
-Cargo: Auxiliar de Informática. 
+                    Manutenção de rede e computadores, envolvendo a montagem de hardware, 
+        reparos e configurações de softwares. 
                 </p>
             </li>
         </ul>
-        <p>
-            Manutenção de rede e computadores, envolvendo a montagem de hardware, 
-reparos e configurações de softwares. 
-        </p>
+      
     </div>
     <div class="conhecimentos">
         <h3>CONHECIMENTOS ADICIONAIS</h3><hr>
         <ul>
             <li>
-                <p>
+                <p class="destaque">
                     Python - básico 
                 </p>
             </li>
             <li>
-                <p>
+                <p class="destaque">
                     Inglês – Básico (Basic One, CNA - conclusão em 2010). 
                 </p>
             </li>
             <li>
-                <p>
+                <p class="destaque">
                     Hábil em manutenções de hardware, software e redes.
                 </p>
             </li>
