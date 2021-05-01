@@ -17,15 +17,16 @@
     <style>
         body {
             margin: 4% 6%;
-            height: 140vh;
+            height: 100%;
             color: rgb(28, 28, 29);
-            background: linear-gradient( rgb(253, 253, 248), rgb(255, 255, 255));
+            background: linear-gradient(to bottom right, rgb(187, 229, 241), rgb(105, 160, 204));
             font-family: Verdana, Tahoma, sans-serif;
             line-height: 0.5cm;
             max-width: 700px;
-            background-repeat: no-repeat;
+            
         }
         h1 {
+            font-size: 30px;
             padding-bottom: 0.7cm;
             color: rgb(54,95,145);
             text-shadow: rgb(178, 201, 219) 2px 2px 2px;
@@ -73,7 +74,7 @@
             }
             div.pdf {
             padding-top: 1cm;
-            padding-left: 5px;
+            padding-left: 1px;
         }
         }
     </style>
@@ -170,7 +171,7 @@ em Out/21.
         textoTyper = "Luiz Gustavo Araújo Vieira"
         var i = 0;
         var velocidade = 100;
-
+        
     function typer() {
         if (i < textoTyper.length) {
             document.getElementById("typer").innerHTML += textoTyper.charAt(i);
