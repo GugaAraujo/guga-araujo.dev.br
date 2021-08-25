@@ -3,34 +3,16 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  border-bottom: 10px solid blanchedalmond;
   font-family: Geneva, Tahoma, sans-serif;
-}
-@media (max-width: 767.98px) {
-  .container {
-    height: 915px;
-  }
-}
-@media (min-width: 767px) and (max-width: 1199.98px) {
-  .container {
-    height: 1115px;
-  }
 }
 .container__conteudo {
   background-image: linear-gradient(115deg, rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.694)), url(/img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  position: fixed;
   width: 100%;
   height: 100%;
-}
-@media (min-width: 900px) {
-  .container__conteudo {
-    position: fixed;
-  }
-}
-@media (min-width: 1400px) {
-  .container__conteudo {
-    position: fixed;
-  }
 }
 .container__aside {
   position: fixed;
