@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Araújo  | Web Fullstack</title>
+    
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" 
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" 
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link
+    async defer
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class="container">
+        <div class="container__aside"  id="menu">
+            <aside class="aside">
+                <div class="aside__perfil">
+                    <img class="aside__perfil-img" src="img/perfil.jpg">
+                    <p class="aside__perfil-nome">Gustavo Araújo</p>
+                    <p class="aside__perfil-cargo"> Desenvolvedor Web Fullstack</p>
+
+                    <a href="certificados/Luiz Gustavo Araujo Vieira - Desenvolvedor Web.pdf" 
+                    download class="aside__btn-cv">Baixar CV</a>
+                
+                </div>
+                <ul class="aside__listas">
+     
+                    <li class="aside__links">
+                        <a href="javasscript:void(0)" class="btnFechar"
+                            onclick="fecharMenuLateral()" id="btnFechar">&times;</a>
+                    </li>
+                    <li class="aside__links">
+                        <p class="aside__contato"><i class="fas fa-terminal"></i>
+                            <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                    </li>
+   
+
+                    <li class="aside__links">
+                        <i class="fab fa-github"></i><a href="https://github.com/GugaAraujo" target="_blank" class="aside__link"> 
+                            Github</a>
+                    </li>
+                    <li class="aside__links">
+                        <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/gugaaraujo" target="_blank" class="aside__link"> 
+                            LinkedIn</a>
+                    </li>
+                    <li class="aside__links">
+                        <i class="fab fa-instagram"></i></i><a href="https://www.instagram.com/guga.raujo" target="_blank" class="aside__link"> 
+                            Instagram</a>
+                    </li>
+                    <li class="aside__links">
+                        <i class="fab fa-whatsapp fa-lg"></i><a href="https://api.whatsapp.com/send?phone=5511910028010&text=Oi%2C%20Gustavo!%20Tudo%20bom%3F"  target="_blank" class="aside__link"> 
+                            Whatsapp</a>
+                    </li>
+                    <li class="aside__links">
+                        <i class="fa fa-phone fa-flip-horizontal"></i><a href="tel:11910028010" target="_blank" class="aside__link"> 
+                            (11) 9-1002-8010</a>
+                    </li>
+                    <li class="aside__links">
+                        <i class="far fa-envelope"></i><a href="mailto:gustavoaraujo.dev@gmail.com" target="_blank" class="aside__link"> 
+                            gustavoaraujo.dev@gmail.com</a>
+                    </li>
+                    <li class="aside__links">
+                        <p class="aside__contato"><i class="fas fa-home"></i>
+                             São Paulo - SP</p>
+                    </li>
+              
+                </ul>    
+            </aside>
+        </div>
+        
+        <div class="container__conteudo" id="conteudo">
+            <nav class="nav">
+                <div class="nav__listas">
+                    <ul class="nav__listas-secao">
+                        <li class="nav__secao">
+                            <a href="#" class="nav__secao-link">Sobre mim</a>
+                        </li>
+                        <li class="nav__secao">
+                            <a href="#" class="nav__secao-link">Formação</a>
+                        </li>
+                        <li class="nav__secao">
+                            <a href="#" class="nav__secao-link">Portfólio</a>
+                        </li>
+                        <li class="nav__secao">
+                            <a href="certificados/Luiz Gustavo Araujo Vieira - Desenvolvedor Web.pdf" 
+                            download class="nav__secao-link">Baixar CV</a>
+                        </li>
+                        <li class="nav__contato-whatsapp">
+                            <a href="https://api.whatsapp.com/send?phone=5511910028010&text=Oi,%20Gustavo!%20Tudo%20bom%253F" 
+                            class="nav__secao-link" target="_blank">
+                            <i class="fab fa-whatsapp fa-lg"></i> Whatsapp</a>
+                        </li>   
+                    </ul>
+
+                    <ul class="nav__mobile">
+                        <li class="nav__lista-mobile">
+                            <a href="https://api.whatsapp.com/send?phone=5511910028010&text=Oi,%20Gustavo!%20Tudo%20bom%253F" 
+                            class="nav__mobile-link" target="_blank">
+                            <i class="fab fa-whatsapp fa-lg"></i></a>
+                        </li>  
+                        <li class="nav__lista-mobile">
+                            <a href="#" class="nav__secao-link">Sobre mim</a>
+                        </li>
+                        <li class="nav__lista-mobile">
+                            <a href="#" class="nav__secao-link">Formação</a>
+                        </li>
+                        <li class="nav__lista-mobile">
+                            <a href="#" class="nav__secao-link">Portfólio</a>
+                        </li>
+                        <li class="nav__lista-mobile">
+                            <span class="nav__btnAbrir" id="btnAbrir" onclick="abrirMenuLateral()">&#9776;</span>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </nav>
+            <main class="main">
+                <div class="sobre" id="sobre">
+                    <h1 class="sobre__h1">Olá, muito prazer! </h1>
+
+                    <p class="sobre__p">
+                        Me chamo Gustavo Araújo e sou um Desenvolvedor Web Fullstack apaixonado por tecnologia.
+                        Atualmente, tenho trabalhado com as seguintes soluções:
+                    </p>
+                    <ul class="sobre__lista-tecnologias lista">
+                        <li class="lista__tecnologia">
+                            <p class="lista__p-tecnologia">
+                                HTML5
+                            </p>
+                        </li>
+                        <li class="lista__tecnologia">
+                            <p class="lista__p-tecnologia">
+                                CSS3
+                            </p>
+                        </li>
+                        <li class="lista__tecnologia">
+                            <p class="lista__p-tecnologia">
+                                SASS
+                            </p>
+                        </li>
+                        <li class="lista__tecnologia">
+                            <p class="lista__p-tecnologia">
+                                JavaScript
+                            </p>
+                        </li>
+                        <li class="lista__tecnologia">
+                            <p class="lista__p-tecnologia">
+                                Node.Js
+                            </p>
+                        </li>
+                    </ul>
+    
+                    <p class="sobre__p">
+                       Para além das linhas de código, sou papai coruja do Tavinho e marido da Gabi.
+                       Moramos em São Paulo, junto ao nosso gato Evaristo.
+                    </p>
+                </div>
+                <div class="escondeSesao" id="formacao">
+                    <h1 class="formacao__h1">
+                        Análise e Desenvolvimento de Sistemas
+                    </h1>
+               
+                    <p class="formacao__subtitulo">
+                        Universidade Estácio de Sá, com conclusão prevista para 2023.
+                    </p>
+                    <h1 class="formacao__h2">
+                        Certificados
+                    </h1>
+                    <p class="formacao__p">
+                        Para acompanhar a constante evolução no setor de tecnologia, 
+                        é importante estar atualizado.<br>
+                        Estes são alguns dos certificados dos cursos fiz na área de desenvolvimento:
+                    </p>
+
+                    <div class="formacao__cards">
+                        <div class="owl-carousel owl-theme">
+                            <img src="certificados/img/Sass O CSS com superpoderes - Alura.png"
+                            class="formacao__card" style="width:260px" id="card"/>
+                            <img src="certificados/img/Responsive Web Design - FreeCodeCamp.png"
+                            class="formacao__card" style="width:260px" id="card"/>
+                            <img src="certificados/img/Sass e Compass Descomplicando o CSS - Alura.png"
+                            class="formacao__card" style="width:260px" id="card"/>
+                            <img src="certificados/img/Rest com NodeJS API com Express e MySQL - Alura.png"
+                            class="formacao__card" style="width:260px" id="card"/>
+                            <img src="certificados/img/UX  UI Fundamentos para o design de interface -Coursera.png"
+                            class="formacao__card" style="width:260px" id="card"/>
+                            <img src="certificados/img/JavaScript Programando na linguagem da web - Alura.png"
+                            class="formacao__card" style="width:260px" id="card"/>
+                            <img src="certificados/img/HTTP Entendendo a web por baixo dos panos - Alura.png"
+                            class="formacao__card" style="width:260px" id="card"/>
+                            <img src="certificados/img/Python 3 - Módulo 2 - curso em video.png"
+                            class="formacao__card" style="width:260px" id="card"/>
+                            <img src="certificados/img/HTML5 e CSS3 parte 4 Avançando no CSS.png"
+                            class="formacao__card" style="width:260px" id="card"/>
+                            <img src="certificados/img/Csharp parte 2 Introdução à Orientação a Objetos - Alura.png"
+                            class="formacao__card" style="width:260px" id="card"/>
+                            <img src="certificados/img/Acessibilidade Web - Alura.png"
+                            class="formacao__card" style="width:260px" id="card"/>
+
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="escondeSesao" id="portfolio">
+                    <h1 class="portfolio__h1">
+                        Casos reais
+                    </h1>
+                    <p class="portfolio__p">
+                      Projetos desenvolvidos para clientes:
+                    </p>
+                    <div class="portfolio__cards">
+                        <div class="owl-carousel owl-theme">
+                              
+                            <img src="portfolio/clientes/lotus1.png"
+                            class="portfolio__card" style="width:260px" id="card"/> 
+                            <img src="portfolio/clientes/lotus.png"
+                            class="portfolio__card" style="width:260px" id="card"/> 
+                            <img src="portfolio/clientes/weopen.png"
+                            class="portfolio__card" style="width:260px" id="card"/> 
+                            <img src="portfolio/clientes/weopen1.png"
+                            class="portfolio__card" style="width:260px" id="card"/>
+   
+
+                        </div>
+                    <h2 class="portfolio__h2">
+                        Projetos pessoais
+                    </h2>
+                    <p class="portfolio__p">
+                        Páginas onde pratiquei diferentes conceitos:
+                    </p>
+    
+                    <div class="portfolio__cards">
+                        <div class="owl-carousel owl-theme">
+                            <img src="portfolio/pessoais/infofilmes.png"
+                            class="portfolio__card" style="width:260px" id="card"/>  
+                            <img src="portfolio/pessoais/calculoIMC.png"
+                            class="portfolio__card" style="width:260px" id="card"/>  
+                            <img src="portfolio/pessoais/buscaGifs.png"
+                            class="portfolio__card" style="width:260px" id="card"/>  
+                            <img src="portfolio/pessoais/telaLogin.png"
+                            class="portfolio__card" style="width:260px" id="card"/>  
+                            <img src="portfolio/pessoais/formulario.png"
+                            class="portfolio__card" style="width:260px" id="card"/>
+                            <img src="portfolio/pessoais/consultaCEP.png"
+                            class="portfolio__card" style="width:260px" id="card"/>    
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+            </main>   
+        </div>
+
+    
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/menuLateral.js"></script>
+    <script src="js/slides.js"></script>
+    <script src="js/botoes.js"></script>
+    <script src="js/typing.js"></script>
+</body>
+</html>

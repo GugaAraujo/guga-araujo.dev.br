@@ -1,0 +1,434 @@
+@import 'helpers';
+@mixin aside {
+    letter-spacing: 1.5px;
+    &__perfil{
+        text-align: center;
+        height: 280px;
+        padding-top: 40px;
+        @include tv-only{
+            height: 350px;
+            padding-top: 100px;
+        }
+        @include phone-only{
+            height: 260px;
+        }
+    }
+
+    &__perfil-img{
+        width: 160px;
+        border-radius: 50%;
+        border: $Sombra-creme solid 2px;
+        @include phone-only{
+            width: 140px;
+        }
+    }
+    &__perfil-nome{
+        font-size: 20px;
+        padding: 10px;
+        color: $creme;
+        @include tv-only{
+            padding-top: 30px;
+        }
+        @include phone-only{
+            font-size: 24px;
+            padding-top: 20px;
+        }
+    }
+    &__perfil-cargo{
+        font-size: 12px;
+        padding-bottom: 5px;
+        color: white;
+        @include phone-only{
+            font-size: 16px;
+        }
+    }
+    &__btn-cv{
+        font-size: 12px;
+        color:$creme;
+        text-decoration: none;
+        @include phone-only{
+            font-size: 16px;
+        }
+        &:hover{
+            color: $branco;
+        }
+    }
+
+    &__listas{
+        padding-left: 65px;
+        @include phone-only{
+            padding-left: 35px;
+        }
+    }
+    i{
+        font-size: 14px;
+        color: $creme;
+        @include phone-only{
+            font-size: 18px;
+        }
+    }
+    &__link{
+        line-height: 30px;
+        font-size: 12px;
+        text-decoration: none;
+        color: white;
+        padding-bottom: 5px;
+        &:hover{
+            color: $creme;
+        }
+        @include phone-only{
+            line-height: 35px;
+            font-size: 14px;
+        }
+    }
+    &__contato{
+        line-height: 30px;
+        font-size: 12px;
+        color: white;
+        padding-bottom: 5px;
+        @include phone-only{
+            line-height: 35px;
+            font-size: 14px;
+        }
+    }
+   }
+
+.container{
+    height: 615px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 10px solid $creme;
+
+
+    font-family:  Geneva, Tahoma, sans-serif;
+
+    &__conteudo{
+        background-image: linear-gradient( 115deg, $fundo-escuro, $fundo-mais-escuro ), url(/img/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+         
+        
+    }
+    &__aside{
+        position: fixed;
+        z-index: 1;
+        background-image: linear-gradient(30deg,black,rgb(57, 57, 57));
+        height: 100%;
+        width: 25%;
+        border-right: 1px solid $creme;
+
+        @include tablet-only{
+            display: none;
+        }
+        @include phone-only{
+            display: none;
+        }
+    }   
+    .menuOculto{
+        position: fixed;
+        z-index: 1;
+        background-image: linear-gradient(30deg, black,rgb(57, 57, 57));
+        height: 100%;
+        width: 25%;
+        border-right: 2px solid $creme;
+    }
+    .btnFechar{
+        position: absolute;
+        top: 0;
+        bottom: 20px;
+        right: 10px;
+        margin-left: 50px;
+        font-size: 30px;
+        text-decoration: none;
+        color: $creme;
+        &:hover{
+            color: $branco;
+        }
+        @include desktop-only{
+            display: none;
+        }
+        @include tv-only{
+            display: none;
+        }
+    }
+}
+
+.aside{
+      
+    @include aside()
+  
+}
+
+.nav{
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    background-color: $fundo-mais-escuro;
+    width: 100%;
+    height: 65px;
+    border-bottom: $Sombra-creme solid 2px;
+    padding-left: 100px;
+    @include tablet-only{
+        justify-content: space-around;
+        padding-left: 0px;
+    }
+    @include phone-only{
+        justify-content: space-around;
+        padding-left: 0px;
+    }
+
+    
+    &__listas-secao{
+        display: flex;
+        list-style: none;
+
+        a,i{
+            text-decoration: none;
+            color: $creme;
+        &:hover{
+            color: $branco;
+            border-bottom: $creme solid 1px;
+        }
+        @include tablet-only{
+            display: none;
+        }
+        @include phone-only{
+            display: none;
+        }
+        }
+    }
+    &__secao, &__contato-whatsapp{ 
+        padding: 25px;
+        &:last-child{
+            padding-left: 120px;
+        }
+        @include tablet-only{
+            display: none;
+        }
+        @include phone-only{
+            display: none;
+        }
+    }
+
+
+    &__mobile{
+        display: flex;
+        list-style: none;
+
+        a,i,span{
+            text-decoration: none;
+            color: $creme;
+        &:hover{
+            color: $branco;
+            border-bottom: $creme solid 1px;
+        }
+        i{
+            font-size: 30px;
+        }
+        @include desktop-only{
+            display: none;
+        }
+        @include tv-only{
+            display: none;
+        }
+        }
+    }
+    &__lista-mobile{ 
+        padding: 25px 10px;
+        @include tablet-only{
+            padding: 25px 30px;
+        }
+        &:first-child{
+            padding-left: 5px;
+            @include tablet-only{
+                padding: 25px 70px;
+            }
+        }
+        &:last-child{
+            padding: 18px 10px;
+            @include tablet-only{
+                padding: 18px 70px;
+            }
+        }
+    }
+    &__btnAbrir{
+        font-size: 30px;
+    }
+
+
+}
+
+.sobre{
+    float: right;
+    width:65%;
+    margin: 120px 60px;
+    font-size: 20px;
+    color: $branco;
+    letter-spacing: 1px;
+    line-height: 27px;
+    &__h1{
+        font-size: 25px;
+        color: $creme;
+        padding-bottom: 35px;
+    }
+    &__p{
+        padding-bottom: 15px;
+    }
+    &__lista-tecnologias{
+        width: 500px;
+        margin: auto;
+        display: flex;
+        padding-top: 5px;
+
+
+        .lista{
+            &__tecnologia{
+                margin: auto;
+                padding-bottom: 50px;
+                @include phone-only{
+                    margin: 5px;
+                    font-size: 15px;
+                }
+            }
+       
+        }
+ 
+    }
+    @include tablet-only{
+        width:85%;
+        float: none;
+        margin: 120px auto;
+    }
+    @include phone-only{
+        width:85%;
+        float: none;
+        margin: 120px auto;
+    }
+
+}
+
+.formacao{
+    float: right;
+    width:65%;
+    margin: 120px 60px;
+    font-size: 20px;
+    color: $branco;
+    letter-spacing: 1px;
+    line-height: 27px;
+    &__h1{
+        font-size: 25px;
+        color: $creme;
+        padding-bottom: 5px;
+    }
+    &__h2{
+        font-size: 23px;
+        color: $creme;
+        padding-bottom: 5px;
+    }
+    &__p{
+        font-size: 16px;
+        padding-bottom: 15px;
+    }
+    &__subtitulo{
+        font-size: 16px;
+        padding-bottom: 35px;
+    }
+    &__cards{
+        width: 800px;
+
+        @include tablet-only{
+            margin: auto;
+            width: 600px;
+        }
+        @include phone-only{
+            margin: auto;
+            width: 80%;
+        }
+    }
+    img{ 
+        max-width: 260px;
+        max-height: 160px;
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+    @include tablet-only{
+        width:85%;
+        float: none;
+        margin: 120px auto;
+    }
+    @include phone-only{
+        width:85%;
+        float: none;
+        margin: 120px auto;
+    }
+
+}
+.portfolio{
+    float: right;
+    width:65%;
+    margin: 120px 60px;
+    font-size: 20px;
+    color: $branco;
+    letter-spacing: 1px;
+    line-height: 27px;
+    &__h1{
+        font-size: 25px;
+        color: $creme;
+        padding-bottom: 5px;
+    }
+    &__h2{
+        font-size: 23px;
+        color: $creme;
+        padding-top: 35px;
+        padding-bottom: 5px;
+    }
+    &__p{
+        font-size: 16px;
+        padding-bottom: 15px;
+    }
+    &__subtitulo{
+        font-size: 16px;
+        padding-bottom: 35px;
+    }
+    &__cards{
+        width: 800px;
+        @include tablet-only{
+            width: 650px;
+        }
+        @include phone-only{
+            width: 90%;
+        }
+    }
+    img{
+        max-width: 260px;  
+        &:hover{
+            cursor: pointer;
+        }
+        
+    }
+    @include tablet-only{
+        width:85%;
+        float: none;
+        margin: 120px auto;
+    }
+    @include phone-only{
+        width:85%;
+        float: none;
+        margin: 120px auto;
+    }
+
+}
+.escondeSesao{
+    display:none;
+}
+.invisivel{
+    @include aside();
+    opacity: 0;
+    transition: opacity .13s ease-in-out;
+}
