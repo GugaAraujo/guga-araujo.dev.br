@@ -1,6 +1,7 @@
 @import 'helpers';
 @mixin aside {
     letter-spacing: 1.5px;
+    
     &__perfil{
         text-align: center;
         height: 280px;
@@ -11,6 +12,9 @@
         }
         @include phone-only{
             height: 260px;
+        }
+        @include small-only{
+            margin-right:40px;
         }
     }
 
@@ -58,6 +62,10 @@
         padding-left: 65px;
         @include phone-only{
             padding-left: 35px;
+        }
+        @include small-only{
+            margin-right:40px;
+            padding-left:35px;
         }
     }
     i{
@@ -121,6 +129,9 @@
         width: 25%;
         border-right: 1px solid $creme;
 
+        @include small-only{
+            display: none;
+        }
         @include tablet-only{
             display: none;
         }
@@ -154,6 +165,9 @@
         @include tv-only{
             display: none;
         }
+        @include small-only{
+            margin-right:40px;
+        }
     }
 }
 
@@ -172,11 +186,16 @@
     height: 65px;
     border-bottom: $Sombra-creme solid 2px;
     padding-left: 100px;
+    
     @include tablet-only{
         justify-content: space-around;
         padding-left: 0px;
     }
     @include phone-only{
+        justify-content: space-around;
+        padding-left: 0px;
+    }
+    @include small-only{
         justify-content: space-around;
         padding-left: 0px;
     }
@@ -193,6 +212,9 @@
             color: $branco;
             border-bottom: $creme solid 1px;
         }
+        @include small-only{
+            display: none;
+        }
         @include tablet-only{
             display: none;
         }
@@ -205,6 +227,9 @@
         padding: 25px;
         &:last-child{
             padding-left: 120px;
+        }
+        @include small-only{
+            display: none;
         }
         @include tablet-only{
             display: none;
@@ -274,6 +299,9 @@
         font-size: 25px;
         color: $creme;
         padding-bottom: 35px;
+        @include small-only{
+            font-size: 22px;
+        }
     }
     &__p{
         padding-bottom: 15px;
@@ -293,6 +321,11 @@
                     margin: 5px;
                     font-size: 15px;
                 }
+                @include small-only{
+                    padding-bottom: 14px;
+                    margin: 4px;
+                    font-size: 14px;
+                }
             }
        
         }
@@ -307,6 +340,12 @@
         width:85%;
         float: none;
         margin: 120px auto;
+    }
+    @include small-only{
+        font-size: 18px;
+        width:85%;
+        float: none;
+        margin: 110px auto;
     }
 
 }
@@ -323,19 +362,33 @@
         font-size: 25px;
         color: $creme;
         padding-bottom: 5px;
+        @include small-only{
+            font-size: 20px;
+        }
     }
     &__h2{
         font-size: 23px;
         color: $creme;
         padding-bottom: 5px;
+        @include small-only{
+            font-size: 20px;
+        }
     }
     &__p{
         font-size: 16px;
         padding-bottom: 15px;
+        @include small-only{
+            padding-bottom: 10px;
+            font-size: 14px;
+        }
     }
     &__subtitulo{
         font-size: 16px;
         padding-bottom: 35px;
+        @include small-only{
+            padding-bottom: 15px;
+            font-size: 14px;
+        }
     }
     &__cards{
         width: 800px;
@@ -347,6 +400,10 @@
         @include phone-only{
             margin: auto;
             width: 80%;
+        }
+        @include small-only{
+            margin: auto;
+            width: 90%;
         }
     }
     img{ 
@@ -367,6 +424,11 @@
         float: none;
         margin: 120px auto;
     }
+    @include small-only{
+        width:85%;
+        float: none;
+        margin: 100px auto;
+    }
 
 }
 .portfolio{
@@ -381,16 +443,26 @@
         font-size: 25px;
         color: $creme;
         padding-bottom: 5px;
+        @include small-only{
+            font-size: 22px;
+        }
     }
     &__h2{
         font-size: 23px;
         color: $creme;
         padding-top: 35px;
         padding-bottom: 5px;
+        @include small-only{
+            padding-top: 5px;
+            font-size: 22px;
+        }
     }
     &__p{
         font-size: 16px;
         padding-bottom: 15px;
+        @include small-only{
+            font-size: 14px;
+        }
     }
     &__subtitulo{
         font-size: 16px;
@@ -404,6 +476,7 @@
         @include phone-only{
             width: 90%;
         }
+        
     }
     img{
         max-width: 260px;  
@@ -421,6 +494,11 @@
         width:85%;
         float: none;
         margin: 120px auto;
+    }
+    @include small-only{
+        width:85%;
+        float: none;
+        margin: 100px auto;
     }
 
 }
