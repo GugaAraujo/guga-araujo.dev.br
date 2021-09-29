@@ -80,8 +80,8 @@
 }
 .aside__perfil {
   text-align: center;
-  height: 280px;
-  padding-top: 40px;
+  height: 255px;
+  padding-top: 20px;
 }
 @media (min-width: 1400px) {
   .aside__perfil {
@@ -592,8 +592,8 @@
 }
 .invisivel__perfil {
   text-align: center;
-  height: 280px;
-  padding-top: 40px;
+  height: 255px;
+  padding-top: 20px;
 }
 @media (min-width: 1400px) {
   .invisivel__perfil {
